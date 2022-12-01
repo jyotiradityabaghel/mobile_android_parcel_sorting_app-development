@@ -112,6 +112,8 @@ public class Login extends AppCompatActivity implements LoginView ,View.OnClickL
         sharedPreferenceManager.setValue_Login(etEmail.getText().toString(),etPassword.getText().toString());
         sharedPreferenceManager.setValue("access_token",loginResponse.getAccess_token());
         sharedPreferenceManager.setValue("token_type",loginResponse.getToken_type());
+        sharedPreferenceManager.setValue("roles",loginResponse.getRoles());
+        sharedPreferenceManager.setValue_int("carrierId",loginResponse.getCarrierId());
         Utility.hideKeyboard(Login.this);
 
         if (loginResponse.getRoles().equals("Courier")) {

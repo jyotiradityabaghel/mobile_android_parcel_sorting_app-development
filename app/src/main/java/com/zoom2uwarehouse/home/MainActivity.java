@@ -37,6 +37,7 @@ import com.zoom2uwarehouse.database.DatabaseClient;
 import com.zoom2uwarehouse.dialog.permission_dialog.PermissionDialog_view;
 import com.zoom2uwarehouse.dialog.permission_dialog.model.PermissionDialog_Model_Implementation;
 import com.zoom2uwarehouse.dialog.permission_dialog.presenter.PermissionDialog_Presenter_Implementation;
+import com.zoom2uwarehouse.get_token.GetTokenClass;
 import com.zoom2uwarehouse.home.model_user_detail.User_detail_m_imp;
 import com.zoom2uwarehouse.home.presenter_user_detail.User_detail_p_imp;
 import com.zoom2uwarehouse.login.Login;
@@ -46,6 +47,7 @@ import com.zoom2uwarehouse.logout.presenter.LogoutPresenterImplementation;
 import com.zoom2uwarehouse.re_assign_delivery.Re_Assign_Deliveries;
 import com.zoom2uwarehouse.run_summary.Run_Summary1;
 import com.zoom2uwarehouse.shared_preference_manager.SharedPreferenceManager;
+import com.zoom2uwarehouse.util.Common_Interface;
 import com.zoom2uwarehouse.util.Utility;
 
 import java.text.SimpleDateFormat;
@@ -57,7 +59,7 @@ import java.util.List;
 import java.util.Set;
 
 public class MainActivity extends AppCompatActivity implements Logoutview,
-        PermissionDialog_view, View.OnClickListener, User_detail_view {
+        PermissionDialog_view, View.OnClickListener, User_detail_view , Common_Interface {
 
     public static int BOTTOMBAR_SELECTED_ITEM = 0;
 
@@ -77,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements Logoutview,
     Typeface customFont;
 
     int isCourierLogin;
-
+    boolean isFromSplashScreen=false;
 
 
     @Override
@@ -91,11 +93,21 @@ public class MainActivity extends AppCompatActivity implements Logoutview,
 
         isCourierLogin = getIntent().getIntExtra("CallReassignDelivery", 0);
 
+        isFromSplashScreen = getIntent().getBooleanExtra("FromSplashScreen", false);
+
+
+
+
+
         // load the animation
         txt_title = findViewById(R.id.title_main);
         txt_full_name = findViewById(R.id.textView4);
         sharedPreferenceManager = new SharedPreferenceManager(MainActivity.this, "warehouse_app");
-
+        if(isFromSplashScreen){
+            Utility.showLoadingDialog(MainActivity.this);
+            GetTokenClass getTokenClass=new GetTokenClass();
+            getTokenClass.getToken(sharedPreferenceManager);
+        }
         new DeleteOldScannedRecords().execute();
 
         permissionDialog_presenter_implementation = new PermissionDialog_Presenter_Implementation(MainActivity.this, this, new PermissionDialog_Model_Implementation());
@@ -228,7 +240,11 @@ public class MainActivity extends AppCompatActivity implements Logoutview,
 
     @Override
     public void Logout_success() {
-        sharedPreferenceManager.setValue_Login("", "");
+        //sharedPreferenceManager.setValue_Login("", "");
+        sharedPreferenceManager.setValue("access_token","");
+        sharedPreferenceManager.setValue("token_type","");
+        sharedPreferenceManager.setValue("roles","");
+        sharedPreferenceManager.setValue_int("carrierId",0);
         Intent intent = new Intent();
         intent.setClass(MainActivity.this, Login.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -445,6 +461,17 @@ public class MainActivity extends AppCompatActivity implements Logoutview,
     @Override
     public void user_error(String s) {
 
+    }
+
+
+    @Override
+    public void showProgress() {
+        Utility.showLoadingDialog(MainActivity.this);
+    }
+
+    @Override
+    public void hideProgress() {
+        Utility.dismissLoadingDialog();
     }
 
     /**

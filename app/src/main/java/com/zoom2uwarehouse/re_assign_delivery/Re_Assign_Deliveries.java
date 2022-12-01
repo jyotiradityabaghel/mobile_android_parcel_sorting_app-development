@@ -455,7 +455,11 @@ public class Re_Assign_Deliveries extends AppCompatActivity implements Permissio
 
     @Override
     public void Logout_success() {
-        sharedPreferenceManager.setValue_Login("", "");
+        //sharedPreferenceManager.setValue_Login("", "");
+        sharedPreferenceManager.setValue("access_token","");
+        sharedPreferenceManager.setValue("token_type","");
+        sharedPreferenceManager.setValue("roles","");
+        sharedPreferenceManager.setValue_int("carrierId",0);
         Intent intent = new Intent();
         intent.setClass(Re_Assign_Deliveries.this, Login.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
