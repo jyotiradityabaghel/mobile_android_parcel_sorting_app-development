@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#01a6e2</color>
+    <color name="colorPrimaryDark">#01A6E2</color>
+    <color name="colorAccent">#01A6E2</color>
+    <color name="triadic">#4B5054</color>
+    <color name="white">#ffffff</color>
+    <color name="triadic1">#7e4b5054</color>
+    <color name="light_color">#EEEEEE</color>
+    <color name="Primary_light">#1A7FAF</color>
+    <color name="primary_light1">#007099</color>
+
+    <color name="primary_light_border">#EBEBEB</color>
+    <color name="primary_light_bg">#F0F0F0</color>
+    <color name="green">#7FCF61</color>
+    <color name="narangi">#FB6A85</color>
+    <color name="green_dark">#5EAC40</color>
+    <color name="green_light">#bce6ac</color>
+    <color name="gold_light">#FFCB2A</color>
+    <color name="gold_light_light">#FFE89F</color>
+
+    <color name="colorPrimary1">#7601a6e2</color>
+    <color name="colorPrimary2">#2a01a6e2</color>
+    <color name="color_light">#ABABAB</color>
+
+</resources>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.zoom2uwarehouse.run_summary.Run_Summary1">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/routes"
+            android:textColor="@color/triadic"
+            android:textSize="20sp" />
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView29"
+            android:textColor="@color/color_light"
+            android:text="Fri,12-Jan 2:30PM"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView30"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_curve_right"
+                android:gravity="center"
+                android:text="@string/awaiting_progress"
+                android:textColor="@color/white" />
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_curve_right_light"
+                android:gravity="center"
+                android:text="@string/in_progress"
+                android:textColor="@color/triadic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_curve_top_blue"
+            android:orientation="horizontal">
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".95"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="#"
+                android:textColor="@color/white" />
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".85"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:text="@string/driver"
+                android:textColor="@color/white" />
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".85"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:text="@string/area"
+                android:textColor="@color/white" />
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/textView43"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/stop"
+                android:textColor="@color/white" />
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/eta"
+                android:textColor="@color/white" />
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/tv_zone_awaiting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:gravity="center"
+                android:text="Zone"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_curve_top_blue"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".95"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="#"
+                android:textColor="@color/white" />
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".85"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:text="@string/driver"
+                android:textColor="@color/white" />
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".85"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:text="@string/area"
+                android:textColor="@color/white" />
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/stop"
+                android:textColor="@color/white" />
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/pu"
+                android:textColor="@color/white" />
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:gravity="center"
+                android:text="@string/du1"
+                android:textColor="@color/white" />
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/ttd"
+                android:textColor="@color/white" />
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:id="@+id/tv_zone_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Zone"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.zoom2uwarehouse.font.TextViewMedium
+        android:id="@+id/textView75"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_margin="10dp"
+        android:gravity="center" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:id="@+id/swapRefreshLayout"
+        android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingBottom="10dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/my_recycler_view_pickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/custom_curve_bottom_light"
+                android:orientation="vertical"
+                android:paddingBottom="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp" />
+
+            <LinearLayout
+                android:id="@+id/my_recycler_view_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/custom_curve_bottom_light"
+                android:orientation="vertical"
+                android:paddingBottom="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:visibility="gone" />
+    </RelativeLayout>
+    </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

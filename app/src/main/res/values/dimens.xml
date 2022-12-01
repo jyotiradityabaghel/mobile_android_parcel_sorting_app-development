@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">170dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Customer scan result text size -->
+    <dimen name="run_numberTxt">50dp</dimen>
+    <dimen name="run_numberMsgTxt">23dp</dimen>
+    <dimen name="status_Txt">20dp</dimen>
+    <dimen name="other_Txt_Large">17dp</dimen>
+    <dimen name="other_Txt">16dp</dimen>
+    <dimen name="other_Txt_small">15.5dp</dimen>
+    <dimen name="other_Txt_ssmall">12dp</dimen>
+</resources>

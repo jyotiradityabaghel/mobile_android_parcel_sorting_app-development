@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_button_round_light"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/textView73"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/run_id" />
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/textView74"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView73"
+            android:layout_toEndOf="@+id/textView73"
+            android:layout_toRightOf="@+id/textView73"
+            android:textColor="@color/triadic" />
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/textView58"
+            android:layout_width="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/textView74"
+            android:layout_height="wrap_content"
+            android:text="@string/awb1" />
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/textView57"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView58"
+            android:layout_toEndOf="@+id/textView58"
+            android:layout_toRightOf="@+id/textView58"
+
+            android:textColor="@color/triadic" />
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/textView59"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView58"
+            android:layout_marginTop="5dp"
+            android:text="@string/pieces" />
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/textView60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView59"
+            android:layout_toEndOf="@+id/textView59"
+            android:layout_toRightOf="@+id/textView59"
+
+            android:textColor="@color/triadic" />
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/textView61"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView60"
+            android:layout_marginTop="5dp"
+            android:text="@string/area1" />
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/textView62"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView61"
+            android:layout_toEndOf="@+id/textView61"
+            android:layout_toRightOf="@+id/textView61"
+            android:textColor="@color/triadic" />
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/textView63"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView62"
+            android:layout_marginTop="5dp"
+            android:text="@string/courier" />
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/textView64"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView63"
+            android:layout_toEndOf="@+id/textView63"
+            android:layout_toRightOf="@+id/textView63"
+            android:textColor="@color/triadic" />
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/textView65"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView64"
+            android:layout_marginTop="5dp"
+            android:text="@string/stop1" />
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/textView66"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView65"
+            android:layout_toEndOf="@+id/textView65"
+            android:layout_toRightOf="@+id/textView65"
+            android:textColor="@color/triadic" />
+
+        <TextView
+            android:id="@+id/textView67"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView66"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/triadic1"
+            android:textColor="@color/triadic" />
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/textView68"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView67"
+            android:layout_marginTop="5dp"
+            android:text="@string/contact" />
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/textView69"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView68"
+            android:layout_toEndOf="@+id/textView68"
+            android:layout_toRightOf="@+id/textView68"
+
+            android:textColor="@color/triadic" />
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/textView70"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView69"
+            android:layout_marginTop="5dp"
+            android:text="@string/address" />
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/textView71"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView70"
+            android:layout_toEndOf="@+id/textView70"
+            android:layout_toRightOf="@+id/textView70"
+
+            android:textColor="@color/triadic" />
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/textView72"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_button_round_5"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/textView70"
+            android:layout_toRightOf="@+id/textView70"
+            android:layout_below="@+id/textView71"
+            android:layout_marginTop="20dp"
+            android:text="@string/ok1" />
+
+    </RelativeLayout>
+</LinearLayout>

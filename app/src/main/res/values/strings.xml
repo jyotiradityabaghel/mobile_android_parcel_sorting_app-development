@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Parcel Sorting</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="forgot_title">Forgot Password</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="account">Account</string>
+    <string name="zoom">Zoom2u</string>
+
+    <string name="routes_driver">Routes &amp; Driver</string>
+    <string name="routes_map">Routes Map</string>
+    <string name="barcode_scanner">Barcode Scanner</string>
+
+    <string name="logout">Logout</string>
+    <string name="returnbtn">Return</string>
+    <string name="cancel">Cancel</string>
+    <string name="msg_logout">Are you sure you wanted to \n\n logout ?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="permission">Permission Required!</string>
+    <string name="permission_msg">Zoom2u Parcel Sorting App need to \n\naccess your</string>
+
+    <string name="location">location</string>
+    <string name="camera">camera</string>
+    <string name="storage">storage</string>
+
+    <string name="ok">Okay</string>
+    <string name="filter_by">Filter by</string>
+    <string name="ok1">Ok</string>
+    <string name="booking">Bookings</string>
+    <string name="distance">Distance</string>
+    <string name="scan_bar">Scan barcode</string>
+    <string name="duration">Duration</string>
+    <string name="manual_scan">Manual Scan</string>
+
+    <string name="text_scan">You can move the target box \naround if needed</string>
+    <string name="scan_title">Scan AWB number manually</string>
+    <string name="done">Done</string>
+    <string name="scan_hint">Enter AWB or Pieces lD</string>
+
+    <string name="awaiting_progress">Awaiting Pickups</string>
+    <string name="in_progress">In Progress</string>
+
+    <string name="driver">Driver</string>
+    <string name="area">Area</string>
+    <string name="stop">Stop</string>
+    <string name="eta">ETA</string>
+    <string name="pu">P/U</string>
+    <string name="du">D/U</string>
+    <string name="du1">D/U</string>
+    <string name="ttd">TTD</string>
+    <string name="alert">Alert</string>
+    <string name="error">Error</string>
+    <string name="info">Info</string>
+    <string name="internet">No Internet connection</string>
+
+    <string name="submit">Submit</string>
+    <string name="email">username</string>
+    <string name="send">Send</string>
+    <string name="routes">Routes</string>
+    <string name="routes0">Routes</string>
+
+    <string name="email_error">Email cannot be empty</string>
+    <string name="email_error1">Invalid email address</string>
+    <string name="password_error">Password cannot be empty</string>
+    <string name="password_error1">Password cannot be less then 4 digit</string>
+    <string name="TextView">TextView</string>
+    <string name="wait">Please wait .....</string>
+    <string name="msg_forgot">Enter your email address \nto reset your password.</string>
+    <string name="menu">Menu</string>
+    <string-array name="my_drawer_array">
+        <item>@string/routes_driver</item>
+        <item>@string/barcode_scanner</item>
+    </string-array>
+
+    <string name="address">Address:</string>
+    <string name="contact">Contact:</string>
+    <string name="stop1">Stop #:</string>
+    <string name="courier">Courier:</string>
+    <string name="area1">Area:</string>
+    <string name="pieces">Pieces:</string>
+    <string name="awb1">AWB:</string>
+    <string name="run_id">RunId:</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Bottom navigation item -->
+    <string name="item_1">Routes &amp; Drivers</string>
+    <string name="item_2">Barcode Scanner</string>
+    <!-- Bottom navigation item -->
+
+    <string name="successfully">Successfully !</string>
+
+
+</resources>

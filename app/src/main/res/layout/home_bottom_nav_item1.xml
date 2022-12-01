@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.zoom2uwarehouse.font.TextViewBold
+        android:id="@+id/routeHomeView"
+        android:layout_width="270dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/barcodeHomeView"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/round_btn_home_routes"
+        android:drawableLeft="@drawable/route_icon"
+        android:drawablePadding="15dp"
+        android:gravity="center|left"
+        android:paddingLeft="40dp"
+        android:text="Route &amp; Drivers"
+        android:textSize="16dp" />
+
+    <com.zoom2uwarehouse.font.TextViewBold
+        android:id="@+id/barcodeHomeView"
+        android:layout_width="270dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/round_btn_home_barcode"
+        android:drawableLeft="@drawable/scan_check"
+        android:drawablePadding="15dp"
+        android:gravity="center|left"
+        android:paddingLeft="40dp"
+        android:text="Barcode scanner"
+        android:textSize="16dp" />
+
+    <com.zoom2uwarehouse.font.TextViewBold
+        android:id="@+id/reAssignInHomeView"
+        android:layout_width="270dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/barcodeHomeView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_btn_home_routes"
+        android:drawableLeft="@drawable/unselecrt_eassign"
+        android:drawablePadding="15dp"
+        android:gravity="center|left"
+        android:paddingLeft="40dp"
+        android:text="Re-assign delivery"
+        android:textSize="16dp" />
+
+</RelativeLayout>

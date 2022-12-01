@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_white_corner"
+    android:orientation="vertical">
+
+    <com.zoom2uwarehouse.font.TextViewMedium
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/triadic"
+        android:text="@string/alert" />
+
+    <com.zoom2uwarehouse.font.TextViewMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="10dp"
+        android:id="@+id/textView17"
+        android:gravity="center"
+  />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/view"
+
+        android:background="@color/triadic" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/triadic"
+        android:orientation="horizontal">
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:layout_marginEnd="1dp" />
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/ok"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="1dp" />
+    </LinearLayout>
+</LinearLayout>

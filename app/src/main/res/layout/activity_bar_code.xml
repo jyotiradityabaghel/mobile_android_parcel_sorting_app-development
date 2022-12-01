@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zoom2uwarehouse.barcode.BarCode">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:background="@color/colorPrimary"
+        android:id="@+id/headerViewForTitleTxt">
+
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/titleTxtReturnView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Return"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/closeBtnReturnView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/nav_back_white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/headerViewForTitleTxt"
+        android:background="@color/white">
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/textView25"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/scan_bar"
+            android:textSize="15sp" />
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/textView25"
+            android:layout_toStartOf="@+id/textView25"
+            android:text="@string/text_scan"
+            android:textSize="10dp"
+            android:lineSpacingExtra="3dp"
+            />
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/textView25"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_button_round_5"
+            android:gravity="center"
+            android:text="@string/manual_scan"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/cameraPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="320dp"
+            android:contentDescription="@string/barcode_scanner"
+            android:layout_height="120dp"
+            android:background="@drawable/corner_border_transparent_bg"
+            >
+        </ImageView>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <RadioGroup
+            android:id="@+id/rgFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <RadioButton
+                android:id="@+id/radioBtnNormalScan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:drawablePadding="10dp"
+                android:drawableBottom="@drawable/icon_checked"
+                android:gravity="center"
+                style="@style/RadioButton"
+                android:text="Normal scan"
+                android:textColor="@color/triadic" />
+
+            <RadioButton
+                android:id="@+id/radioBtnReceived"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:button="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:drawableBottom="@drawable/uncheck"
+                android:gravity="center"
+                style="@style/RadioButton"
+                android:text="Received"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/triadic" />
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/radioBtnReturn"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--android:button="@android:color/transparent"-->
+                <!--android:drawablePadding="10dp"-->
+                <!--android:drawableBottom="@drawable/uncheck"-->
+                <!--android:gravity="center"-->
+                <!--style="@style/RadioButton"-->
+                <!--android:text="Return"-->
+                <!--android:textColor="@color/triadic" />-->
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</RelativeLayout>

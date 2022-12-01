@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_white_corner"
+    android:layout_height="wrap_content">
+
+
+    <com.zoom2uwarehouse.font.TextViewBold
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/triadic"
+        android:text="TextView" />
+
+    <com.zoom2uwarehouse.font.TextViewMedium
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/triadic"
+        android:text="TextView" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/triadic"
+        android:layout_height="1dp" />
+    <com.zoom2uwarehouse.font.TextViewBold
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/ok" />
+</LinearLayout>

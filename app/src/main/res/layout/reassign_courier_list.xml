@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/headerViewCourierReassign"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backBtnReassignView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/nav_back_white" />
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/logoutBtnReassignView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="Logout"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/headerTxtReassignView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:lineSpacingExtra="3dp"
+            android:text="Re-assign delivery"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <com.zoom2uwarehouse.font.TextViewMedium
+        android:id="@+id/titleReassignView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerViewCourierReassign"
+        android:background="@drawable/bg_bottomborder"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:text="Which courier you want to\nre-assign the deliveries?"
+        android:textColor="@color/triadic"
+        android:textSize="14dp"
+        android:visibility="visible" />
+
+    <com.zoom2uwarehouse.font.EditViewMedium
+        android:id="@+id/edtSearchViewReassignView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleReassignView"
+        android:background="@drawable/bg_bottomborder"
+        android:gravity="center"
+        android:hint="eg. Steve jackson"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/triadic"
+        android:textSize="14dp"
+        android:visibility="visible" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edtSearchViewReassignView"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.zoom2uwarehouse.font.TextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:id="@+id/notAvailTxt"
+                android:textSize="14dp"
+                android:text="Couriers not available"
+                android:textColor="@color/triadic" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewReassignView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include
+        android:id="@+id/barcodeFrameLayoutView"
+        layout="@layout/barcode_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleReassignView"
+        android:visibility="gone" />
+
+</RelativeLayout>

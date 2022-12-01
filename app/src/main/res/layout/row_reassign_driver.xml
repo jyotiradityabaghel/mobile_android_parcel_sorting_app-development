@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:id="@+id/courierListReassignDelivery"
+    android:paddingBottom="7dp"
+    android:paddingRight="20dp">
+
+    <com.zoom2uwarehouse.font.TextViewMedium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver name"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/driverNameTxt"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/triadic"
+        android:textSize="16dp" />
+
+    <com.zoom2uwarehouse.font.TextViewMedium
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company name"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/driverNameTxt"
+        android:layout_below="@+id/driverNameTxt"
+        android:id="@+id/companyNameTxt"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/triadic1"
+        android:visibility="visible"
+        android:textSize="13dp" />
+
+</RelativeLayout>

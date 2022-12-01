@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:background="@drawable/custom_button_curve" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp">
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/runStatusTxtForPickHeaderScanAlrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Item is now marked as"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/other_Txt_ssmall"/>
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/runTxtPieceStatusScanAlrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Picked up"
+            android:layout_below="@+id/runStatusTxtForPickHeaderScanAlrt"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/run_numberMsgTxt"/>
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/runStatusTxtSuggestStopNoScanAlrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Suggested Stop Number:"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp"
+            android:textColor="@color/triadic"
+            android:layout_below="@+id/runTxtPieceStatusScanAlrt"
+            android:textSize="@dimen/other_Txt_ssmall"/>
+
+        <com.zoom2uwarehouse.font.TextViewBold
+            android:id="@+id/runNoCustomerScanAlrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/runStatusTxtSuggestStopNoScanAlrt"
+            android:textSize="@dimen/run_numberTxt"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/awbTxtCustomerScanAlrt"
+            android:layout_marginRight="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/dividerLine"
+            android:background="@color/triadic"
+            android:layout_below="@+id/runNoCustomerScanAlrt"/>
+
+        <com.zoom2uwarehouse.font.TextViewNormal
+            android:id="@+id/awbTxtCustomerScanAlrt"
+            android:layout_below="@+id/dividerLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="AWB:"
+            android:textSize="@dimen/other_Txt"/>
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/awbValueCustomerScanAlrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pickUpTxtCustomerScanAlrt"
+            android:layout_alignTop="@+id/awbTxtCustomerScanAlrt"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textSize="@dimen/other_Txt"
+            android:textStyle="bold"/>
+
+        <com.zoom2uwarehouse.font.TextViewNormal
+            android:id="@+id/pieceTxtCustomerScanAlrt"
+            android:layout_below="@+id/awbValueCustomerScanAlrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/awbTxtCustomerScanAlrt"
+            android:layout_marginTop="7dp"
+            android:text="Pieces:"
+            android:textSize="@dimen/other_Txt"/>
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/pieceValueCustomerScanAlrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/awbValueCustomerScanAlrt"
+            android:layout_alignTop="@+id/pieceTxtCustomerScanAlrt"
+            android:text=""
+            android:textSize="@dimen/other_Txt"
+            android:textStyle="bold"/>
+
+        <com.zoom2uwarehouse.font.TextViewNormal
+            android:id="@+id/stopTxtCustomerScanAlrt"
+            android:layout_below="@+id/pieceValueCustomerScanAlrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/awbTxtCustomerScanAlrt"
+            android:layout_marginTop="7dp"
+            android:text="Stop:"
+            android:visibility="invisible"
+            android:textSize="@dimen/other_Txt"/>
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/stopValueCustomerScanAlrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/awbValueCustomerScanAlrt"
+            android:layout_alignTop="@+id/stopTxtCustomerScanAlrt"
+            android:text=""
+            android:visibility="invisible"
+            android:textSize="@dimen/other_Txt"
+            android:textStyle="bold"/>
+
+        <com.zoom2uwarehouse.font.TextViewNormal
+            android:id="@+id/pickUpTxtCustomerScanAlrt"
+            android:layout_below="@+id/stopTxtCustomerScanAlrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/awbTxtCustomerScanAlrt"
+            android:layout_marginTop="7dp"
+            android:text="Pickup by:"
+            android:textSize="@dimen/other_Txt"/>
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/pickValueCustomerScanAlrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/awbValueCustomerScanAlrt"
+            android:layout_alignTop="@+id/pickUpTxtCustomerScanAlrt"
+            android:text=""
+            android:textSize="@dimen/other_Txt_small"
+            android:textStyle="bold"/>
+
+        <com.zoom2uwarehouse.font.TextViewNormal
+            android:id="@+id/dropTxtCustomerScanAlrt"
+            android:layout_below="@+id/pickUpTxtCustomerScanAlrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/awbTxtCustomerScanAlrt"
+            android:layout_marginTop="7dp"
+            android:text="Drop by:"
+            android:textSize="@dimen/other_Txt"/>
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/dropByValueCustomerScanAlrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/awbValueCustomerScanAlrt"
+            android:layout_alignTop="@+id/dropTxtCustomerScanAlrt"
+            android:text=""
+            android:textSize="@dimen/other_Txt_small"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/dividerLine1"
+            android:layout_alignLeft="@+id/awbTxtCustomerScanAlrt"
+            android:layout_marginRight="15dp"
+            android:background="@color/triadic1"
+            android:layout_below="@+id/dropTxtCustomerScanAlrt"/>
+
+        <com.zoom2uwarehouse.font.TextViewNormal
+            android:id="@+id/toTxtCustomerScanAlrt"
+            android:layout_below="@+id/dividerLine1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="To:"
+            android:textColor="@color/triadic"
+            android:textSize="@dimen/other_Txt_Large"/>
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/suburbPostCodeCustomerScanAlrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pickUpTxtCustomerScanAlrt"
+            android:layout_alignTop="@+id/toTxtCustomerScanAlrt"
+            android:layout_marginLeft="5dp"
+            android:text="Surry Hills, 2050"
+            android:textColor="@color/triadic"
+            android:textSize="@dimen/other_Txt_Large"
+            android:textStyle="bold"/>
+
+        <com.zoom2uwarehouse.font.TextViewMedium
+            android:id="@+id/okBtnCustomScanAlert"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:background="@drawable/custom_button_round"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Okay"
+            android:textSize="@dimen/other_Txt"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+</RelativeLayout>
